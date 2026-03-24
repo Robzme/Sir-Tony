@@ -1,4 +1,5 @@
 <?php
+require_once "conn.php"
 // Encryption helpers
 function _uylogres_encryption_key(): string {
     return hash('sha256', 'uylogres_secret_key_2026', true);
@@ -62,7 +63,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["register"])){
     }
 };
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
