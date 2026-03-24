@@ -1,4 +1,5 @@
 <?php
+require_once "conn.php"
 // Encryption helpers
 function _uylogres_encryption_key(): string {
     return hash('sha256', 'uylogres_secret_key_2026', true);
