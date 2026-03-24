@@ -1,4 +1,5 @@
 <?php
+require_once "conn.php"
 // Used htmlspecialchars for input validation
 // Encryption helpers
 function _uylogres_encryption_key(): string {
